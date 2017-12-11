@@ -19,7 +19,7 @@ public class ArrayListTest {
 	public void test1() {
 		// Test Case 1: Test, if initializing the list was successful
 		assertNotNull(list);
-		assertEquals(list.size(), 0);
+		assertEquals(0, list.size());
 	}
 
 	@Test
@@ -27,9 +27,9 @@ public class ArrayListTest {
 		// Test Case 2: Test, if adding an element was successful
 		list.add("Hugo");
 		list.add("Boris");
-		assertEquals(list.size(), 2);
-		assertEquals(list.get(0), "Hugo");
-		assertEquals(list.get(1), "Boris");
+		assertEquals(2, list.size());
+		assertEquals("Hugo", list.get(0));
+		assertEquals("Boris", list.get(1));
 	}
 
 	@Test
@@ -37,7 +37,7 @@ public class ArrayListTest {
 		// Test Case 3: Test, if deleting an element was successful
 		list.add("Hugo");
 		list.remove(0);
-		assertEquals(list.size(), 0);
+		assertEquals(0, list.size());
 	}
 
 }
